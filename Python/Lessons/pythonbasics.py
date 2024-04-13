@@ -80,7 +80,7 @@ else:
 	print("It is not wet feel free to run if you want")
 
 #elif
-#The elif statement is used to run a block of code if the condition is true.
+#The elif statement is used to run a block of code if the first condition was false.
 # Elif is a combination of else and if called elif
 if 5 + 2 == 5:
 	print("This is incorrect")
