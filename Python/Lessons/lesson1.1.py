@@ -1,3 +1,6 @@
+#A slightly improved version of the previous lesson
+
+print("Welcome to the calculator")
 functions = "+, -, /, >, <, *"
 
 operator = input("Enter a single operator from this list: "+functions)

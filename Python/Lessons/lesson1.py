@@ -1,17 +1,28 @@
-functions = "+, -, /, >, <, *"
+# Request input from the user. Whatever the user types in will be stored in the variable as a integer
+num1 = int(input("Enter the first number: "))
+# Request that the user enter +, -, *, /, <, >
+operator = input("Enter a operator: ")
+# Again request input from the user for the second number.
+num2 = int(input("Enter the second number: "))
 
-input1 = input("Enter the first number: ")
-operator = input("Enter a single operator from this list: "+functions)
-
-#Perform Input Validation
-if operator in functions:
-	input2 = input("Enter the second number: ")
-else:
-	print("Invalid operator GOODBYE!")
-	exit()
-
-
-#Perform Calculation		
+#These are the conditional statements
+# Now you need to check what the user entered and perform the correct operation
 if operator == "+":
-    print(int(input1) + int(input2))
-    
+	result = num1 + num2
+elif operator == "-":
+	result = num1 - num2
+elif operator == "*":
+	result = num1 * num2
+elif operator == "/":
+	result = num1 / num2
+elif operator == "<":
+	result = num1 < num2
+	print(str(num1)+" is less than "+str(num2))
+elif operator == ">":
+	result = num1 > num2
+	print(str(num1)+" is more than "+str(num2))
+else:
+	print("Invalid operator")
+
+#Finally print the result
+print("The result is "+str(result)+ "🎉🎉🎉🎉🎉🎉🎉")
